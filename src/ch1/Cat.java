@@ -1,59 +1,62 @@
 package ch1;
 
-public class Cat extends Animal{
-	/*
+
+public class Cat {
+
 	private String name = "";
 	private String color = "";
 	private int shoutNum = 1;
 
 	static int initNum = 0;
-	*/
+
 	/*
-	// µÚÈıÌâ
+	// ç¬¬ä¸‰é¢˜
 	public Cat() {
 		this.shout();
 	}
-	
-	// µÚÈıÌâ
+
+	// ç¬¬ä¸‰é¢˜
 	public Cat(String name) {
-		this.name = name; 
+		this.name = name;
 		this.shout();
-		
+
 	}
-	/*µÚÈıÌâ
+	/*ç¬¬ä¸‰é¢˜
 	 public void shout() {
 		System.out.println("my name is " + name + ", mewo" );
 	}
-	 * 
-	// µÚËÄÌâ
+	 *
+	// ç¬¬å››é¢˜
 	public Cat(String name, String color) {
-		this.name = name; 
+		this.name = name;
 		this.color = color;
 		this.shout();
 	}
 	*/
-	/*
-	// µÚÁùÌâ
+
+	// ç¬¬å…­é¢˜
 	public Cat() {
 		this.shout();
 		initNum ++;
 	}
 	public Cat(String name) {
-		this.name = name; 
+		this.name = name;
 		this.shout();
 		initNum ++;
 	}
 	public Cat(String name, String color) {
-		this.name = name; 
+		this.name = name;
 		this.color = color;
 		this.shout();
 		initNum ++;
 	}
-	*/
+
 	public static int getInitNum() {
 		return initNum;
 	}
-	//µÚÎåÌâ
+
+
+	//ç¬¬äº”é¢˜
 	public void shout() {
 		
 		System.out.print("my name is " + name);
@@ -75,7 +78,7 @@ public class Cat extends Animal{
 		return this.shoutNum;
 	}
 	
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Cat cat = new Cat("jack");
 		cat.setShoutNum(11);
 		cat.shout();
